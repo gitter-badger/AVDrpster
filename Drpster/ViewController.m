@@ -59,9 +59,9 @@
     image = [UIImage imageNamed:@"ShutterButtonStop"];
     self.recStopImage = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     
-    [self.recBtn setTintColor:[UIColor colorWithRed:158./255.
-                                              green:231./255.
-                                               blue:250./255.
+    [self.recBtn setTintColor:[UIColor colorWithRed:232./255.
+                                              green:0./255.
+                                               blue:13./255.
                                               alpha:1.0]];
     self.outerImage1 = [UIImage imageNamed:@"outer1"];
     self.outerImage2 = [UIImage imageNamed:@"outer1"];
@@ -86,7 +86,7 @@
 
 - (void)saveRecordedFile:(NSURL *)recordedFile {
     
-    [SVProgressHUD showWithStatus:@"Saving..."
+    [SVProgressHUD showWithStatus:@"Saving Video..."
                          maskType:SVProgressHUDMaskTypeGradient];
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -106,11 +106,11 @@
                  
                  if (error != nil) {
                      
-                     title = @"Failed to save video";
+                     title = @"Oops! Failed to save.";
                      message = [error localizedDescription];
                  }
                  else {
-                     title = @"Saved!";
+                     title = @"Saved to library!";
                      message = nil;
                  }
                  
@@ -219,12 +219,12 @@
             break;
         }
         case 1:
-            desiredFps = 200.0;
+            desiredFps = 120.0;
             break;
     }
     
     
-    [SVProgressHUD showWithStatus:@"Switching..."
+    [SVProgressHUD showWithStatus:@"Changing..."
                          maskType:SVProgressHUDMaskTypeGradient];
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
