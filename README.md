@@ -1,4 +1,6 @@
 # Drpster
+
+[![Join the chat at https://gitter.im/Abrupt/AVDrpster](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Abrupt/AVDrpster?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Drpster is a slick, user friendly, video app that take those elegant, 120 slow-motion, videos that you love.
 
 ![](https://is1-ssl.mzstatic.com/image/thumb/Purple1/v4/5a/6b/a3/5a6ba3dc-6460-c93d-22d2-791e44bf1776/pr_source.png/500x500bb-80.png)
